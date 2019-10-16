@@ -1,0 +1,56 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh:    <http://www.w3.org/ns/shacl#>.
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#>.
+@prefix cco:   <http://www.ontologyrepository.com/CommonCoreOntologies/>.
+@prefix obo:   <http://purl.obolibrary.org/obo/>.
+@prefix :      <#>.
+
+:personShape a sh:NodeShape ;
+    sh:targetClass cco:Person ;
+    sh:path :personDesignatorShape .
+
+:personDesignatorShape a sh:PropertyShape ;
+    sh:or (
+       sh:property [
+          sh:path cco:designated_by ;
+          sh:node :personFullNameShape ]
+       sh:property [
+          sh:path cco:designated_by ;
+          sh:node :personNicknameShape ]
+    ) .
+
+:personFullNameShape a sh:NodeShape ;
+    sh:targetClass cco:PersonFullName ;
+       sh:union (
+         sh:property [
+           sh:path obo:BFO_0000051 ;
+           sh:node :personGivenNameNodeShape ]
+         sh:property [
+           sh:path obo:BFO_0000051 ;
+           sh:node :personFamilyNameNodeShape ]
+       ) .
+
+:personGivenNameNodeShape a sh:NodeShape ;
+    sh:targetClass cco:PersonGivenName ;
+    sh:property [
+      sh:path (obo:RO_0010001 cco:has_text_value) ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string ] .
+
+:personFamilyNameNodeShape a sh:NodeShape ;
+    sh:targetClass cco:PersonFamilyName ;
+    sh:property [
+      sh:path (obo:RO_0010001 cco:has_text_value) ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string ] .
+
+:personNicknameShape a sh:NodeShape ;
+    sh:targetClass cco:Nickname ;
+    sh:property [
+      sh:path (obo:RO_0010001 cco:has_text_value) ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string ] .

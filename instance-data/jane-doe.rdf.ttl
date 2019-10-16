@@ -1,0 +1,244 @@
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.cubrc.org/Data/Person1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1286172209> a cco:Person ;
+    obo:RO_0000053 <http://www.cubrc.org/Data/OccupationRole1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1139407890> ;
+    cco:agent_in <http://www.cubrc.org/Data/ActOfResiding1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_792889892> ;
+    cco:designated_by <http://www.cubrc.org/Data/Nickname1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-746360295>,
+        <http://www.cubrc.org/Data/ProperName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_982148573> ;
+    cco:is_object_of <http://www.cubrc.org/Data/Birth1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-486981206> ;
+    cco:uses <http://www.cubrc.org/Data/EmailBox1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1015121539>,
+        <http://www.cubrc.org/Data/EmailBox2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1906043182>,
+        <http://www.cubrc.org/Data/Telephone1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-953541165>,
+        <http://www.cubrc.org/Data/Telephone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_330491050> .
+
+<http://www.cubrc.org/Data/ActOfInhabitancy1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1277996656> a cco:ActOfInhabitancy ;
+    cco:has_object <http://www.cubrc.org/Data/Facility1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1204908494> .
+
+<http://www.cubrc.org/Data/ActOfOwnership4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-591276095> a cco:ActOfOwnership ;
+    cco:has_object <http://www.cubrc.org/Data/Telephone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_330491050> .
+
+<http://www.cubrc.org/Data/ActOfOwnership5_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1766104132> a cco:ActOfOwnership ;
+    cco:has_object <http://www.cubrc.org/Data/EmailBox2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1906043182> .
+
+<http://www.cubrc.org/Data/ActOfResiding1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_792889892> a cco:ActOfResiding ;
+    cco:has_object <http://www.cubrc.org/Data/ResidentialFacility1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-620888265> .
+
+<http://www.cubrc.org/Data/Birth1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-486981206> a cco:Birth ;
+    cco:occurs_on <http://www.cubrc.org/Data/Day6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_62387816> .
+
+<http://www.cubrc.org/Data/Country1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-785380927> a cco:Country ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-788071685> .
+
+<http://www.cubrc.org/Data/Country2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_612667863> a cco:Country ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2005785149> .
+
+<http://www.cubrc.org/Data/DateIdentifier6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1669570647> a cco:DateIdentifier ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity21_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_856988730> .
+
+<http://www.cubrc.org/Data/Day6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_62387816> a cco:Day ;
+    cco:designated_by <http://www.cubrc.org/Data/DateIdentifier6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1669570647> .
+
+<http://www.cubrc.org/Data/DesignativeName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1272330791> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1798780034> .
+
+<http://www.cubrc.org/Data/DesignativeName2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1667921846> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity5_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_346671406> .
+
+<http://www.cubrc.org/Data/DesignativeName3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-788071685> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2036092354> .
+
+<http://www.cubrc.org/Data/DesignativeName4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-783912570> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity16_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1809494615> .
+
+<http://www.cubrc.org/Data/DesignativeName5_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_358797760> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity17_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-583274473> .
+
+<http://www.cubrc.org/Data/DesignativeName6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2005785149> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity30_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1475686372> .
+
+<http://www.cubrc.org/Data/DesignativeName7_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_931998452> a cco:DesignativeName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity14_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-554697190> .
+
+<http://www.cubrc.org/Data/EmailAddress1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-20537065> a cco:EmailAddress ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity36_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1975965476> .
+
+<http://www.cubrc.org/Data/EmailAddress2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1250533524> a cco:EmailAddress ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity20_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1646909829> .
+
+<http://www.cubrc.org/Data/EmailBox1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1015121539> a cco:EmailBox ;
+    obo:RO_0000056 <http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1709483086> .
+
+<http://www.cubrc.org/Data/Facility1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1204908494> a cco:Facility ;
+    obo:RO_0001025 <http://www.cubrc.org/Data/LocalAdministrativeRegion2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1588252983>,
+        <http://www.cubrc.org/Data/PostalZone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_225032857> ;
+    cco:designated_by <http://www.cubrc.org/Data/StreetAddress2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1902777174> .
+
+<http://www.cubrc.org/Data/FamilyName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_738823472> a cco:FamilyName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity28_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-343435312> .
+
+<http://www.cubrc.org/Data/GivenName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_580944641> a cco:GivenName ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity29_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-746703464> .
+
+<http://www.cubrc.org/Data/InformationBearingEntity10_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-222226264> a cco:InformationBearingEntity ;
+    cco:has_text_value "555-555-6789" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity12_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2047664438> a cco:InformationBearingEntity ;
+    cco:has_text_value "Lead Developer" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity14_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-554697190> a cco:InformationBearingEntity ;
+    cco:has_text_value "Tech Giant" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity15_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1260111562> a cco:InformationBearingEntity ;
+    cco:has_text_value "12345 Business Parkway Suite 100" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity16_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1809494615> a cco:InformationBearingEntity ;
+    cco:has_text_value "Springfield" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity17_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-583274473> a cco:InformationBearingEntity ;
+    cco:has_text_value "MO" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-588513249> a cco:InformationBearingEntity ;
+    cco:has_text_value "14521" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity20_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1646909829> a cco:InformationBearingEntity ;
+    cco:has_text_value "doe.jane@techgiant.org" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity21_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_856988730> a cco:InformationBearingEntity ;
+    cco:has_text_value "January 1 1999" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity26_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_104252479> a cco:InformationBearingEntity ;
+    cco:has_text_value "Jade" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity28_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-343435312> a cco:InformationBearingEntity ;
+    cco:has_text_value "Doe" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity29_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-746703464> a cco:InformationBearingEntity ;
+    cco:has_text_value "Jane" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1173920801> a cco:InformationBearingEntity ;
+    cco:has_text_value "555-555-9876x210" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity30_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1475686372> a cco:InformationBearingEntity ;
+    cco:has_text_value "USA" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity36_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1975965476> a cco:InformationBearingEntity ;
+    cco:has_text_value "janedoe@email.com" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_287727903> a cco:InformationBearingEntity ;
+    cco:has_text_value "1234 Any St" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1798780034> a cco:InformationBearingEntity ;
+    cco:has_text_value "Springfield" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity5_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_346671406> a cco:InformationBearingEntity ;
+    cco:has_text_value "MO" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity6_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2036092354> a cco:InformationBearingEntity ;
+    cco:has_text_value "USA" .
+
+<http://www.cubrc.org/Data/InformationBearingEntity7_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_447411166> a cco:InformationBearingEntity ;
+    cco:has_text_value "12345" .
+
+<http://www.cubrc.org/Data/LocalAdministrativeRegion1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1971833358> a cco:LocalAdministrativeRegion ;
+    obo:BFO_0000050 <http://www.cubrc.org/Data/State1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1829174347> ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1272330791> .
+
+<http://www.cubrc.org/Data/LocalAdministrativeRegion2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1588252983> a cco:LocalAdministrativeRegion ;
+    obo:BFO_0000050 <http://www.cubrc.org/Data/State2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1491929513> ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-783912570> .
+
+<http://www.cubrc.org/Data/Nickname1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-746360295> a cco:Nickname ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity26_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_104252479> .
+
+<http://www.cubrc.org/Data/NominalMeasurementInformationContentEntity1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1847605563> a cco:NominalMeasurementInformationContentEntity ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity12_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2047664438> .
+
+<http://www.cubrc.org/Data/OccupationRole1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1139407890> a cco:OccupationRole ;
+    cco:described_by <http://www.cubrc.org/Data/NominalMeasurementInformationContentEntity1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1847605563> ;
+    cco:has_organizational_context <http://www.cubrc.org/Data/Organization1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_900692231> .
+
+<http://www.cubrc.org/Data/Organization1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_900692231> a cco:Organization ;
+    cco:agent_in <http://www.cubrc.org/Data/ActOfInhabitancy1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1277996656>,
+        <http://www.cubrc.org/Data/ActOfOwnership4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-591276095>,
+        <http://www.cubrc.org/Data/ActOfOwnership5_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1766104132> ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName7_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_931998452> .
+
+<http://www.cubrc.org/Data/PostalCode1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1453730426> a cco:PostalCode ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity7_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_447411166> .
+
+<http://www.cubrc.org/Data/PostalCode2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-203036578> a cco:PostalCode ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-588513249> .
+
+<http://www.cubrc.org/Data/PostalZone1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2037753919> a cco:PostalZone ;
+    cco:designated_by <http://www.cubrc.org/Data/PostalCode1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1453730426> .
+
+<http://www.cubrc.org/Data/PostalZone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_225032857> a cco:PostalZone ;
+    cco:designated_by <http://www.cubrc.org/Data/PostalCode2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-203036578> .
+
+<http://www.cubrc.org/Data/ProperName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_982148573> a cco:ProperName ;
+    obo:BFO_0000051 <http://www.cubrc.org/Data/FamilyName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_738823472>,
+        <http://www.cubrc.org/Data/GivenName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_580944641> .
+
+<http://www.cubrc.org/Data/ResidentialFacility1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-620888265> a cco:ResidentialFacility ;
+    obo:RO_0001025 <http://www.cubrc.org/Data/LocalAdministrativeRegion1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1971833358>,
+        <http://www.cubrc.org/Data/PostalZone1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2037753919> ;
+    cco:designated_by <http://www.cubrc.org/Data/StreetAddress1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1603822953> .
+
+<http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1406889392> a cco:StasisOfTelecommunicationEndpointAssignment ;
+    obo:RO_0000057 <http://www.cubrc.org/Data/TelecommunicationEndpoint1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2064206990> .
+
+<http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_97041235> a cco:StasisOfTelecommunicationEndpointAssignment ;
+    obo:RO_0000057 <http://www.cubrc.org/Data/TelecommunicationEndpoint2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1295811064> .
+
+<http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1709483086> a cco:StasisOfTelecommunicationEndpointAssignment ;
+    obo:RO_0000057 <http://www.cubrc.org/Data/TelecommunicationEndpoint3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-790214444> .
+
+<http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-223596418> a cco:StasisOfTelecommunicationEndpointAssignment ;
+    obo:RO_0000057 <http://www.cubrc.org/Data/TelecommunicationEndpoint4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-815867888> .
+
+<http://www.cubrc.org/Data/State1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1829174347> a cco:State ;
+    obo:BFO_0000050 <http://www.cubrc.org/Data/Country1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-785380927> ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1667921846> .
+
+<http://www.cubrc.org/Data/State2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1491929513> a cco:State ;
+    obo:BFO_0000050 <http://www.cubrc.org/Data/Country2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_612667863> ;
+    cco:designated_by <http://www.cubrc.org/Data/DesignativeName5_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_358797760> .
+
+<http://www.cubrc.org/Data/StreetAddress1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1603822953> a cco:StreetAddress ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_287727903> .
+
+<http://www.cubrc.org/Data/StreetAddress2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1902777174> a cco:StreetAddress ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity15_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1260111562> .
+
+<http://www.cubrc.org/Data/TelecommunicationEndpoint1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-2064206990> a cco:TelecommunicationEndpoint ;
+    cco:designated_by <http://www.cubrc.org/Data/TelephoneNumber1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1868439988> .
+
+<http://www.cubrc.org/Data/TelecommunicationEndpoint2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1295811064> a cco:TelecommunicationEndpoint ;
+    cco:designated_by <http://www.cubrc.org/Data/TelephoneNumber2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1579943281> .
+
+<http://www.cubrc.org/Data/TelecommunicationEndpoint3_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-790214444> a cco:TelecommunicationEndpoint ;
+    cco:designated_by <http://www.cubrc.org/Data/EmailAddress1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-20537065> .
+
+<http://www.cubrc.org/Data/TelecommunicationEndpoint4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-815867888> a cco:TelecommunicationEndpoint ;
+    cco:designated_by <http://www.cubrc.org/Data/EmailAddress2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1250533524> .
+
+<http://www.cubrc.org/Data/Telephone1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-953541165> a cco:Telephone ;
+    obo:RO_0000056 <http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1406889392> .
+
+<http://www.cubrc.org/Data/TelephoneNumber1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1868439988> a cco:TelephoneNumber ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity10_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-222226264> .
+
+<http://www.cubrc.org/Data/TelephoneNumber2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1579943281> a cco:TelephoneNumber ;
+    obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1173920801> .
+
+<http://www.cubrc.org/Data/EmailBox2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1906043182> a cco:EmailBox ;
+    obo:RO_0000056 <http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment4_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-223596418> .
+
+<http://www.cubrc.org/Data/Telephone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_330491050> a cco:Telephone ;
+    obo:RO_0000056 <http://www.cubrc.org/Data/StasisOfTelecommunicationEndpointAssignment2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_97041235> .
+
