@@ -9,7 +9,7 @@
     obo:RO_0000053 <http://www.cubrc.org/Data/OccupationRole1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1139407890> ;
     cco:agent_in <http://www.cubrc.org/Data/ActOfResiding1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_792889892> ;
     cco:designated_by <http://www.cubrc.org/Data/Nickname1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-746360295>,
-        <http://www.cubrc.org/Data/ProperName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_982148573> ;
+        <http://www.cubrc.org/Data/PersonFullName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_982148573> ;
     cco:is_object_of <http://www.cubrc.org/Data/Birth1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-486981206> ;
     cco:uses <http://www.cubrc.org/Data/EmailBox1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1015121539>,
         <http://www.cubrc.org/Data/EmailBox2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1906043182>,
@@ -78,10 +78,10 @@
         <http://www.cubrc.org/Data/PostalZone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_225032857> ;
     cco:designated_by <http://www.cubrc.org/Data/StreetAddress2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_1902777174> .
 
-<http://www.cubrc.org/Data/FamilyName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_738823472> a cco:FamilyName ;
+<http://www.cubrc.org/Data/PersonFamilyName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_738823472> a cco:PersonFamilyName ;
     obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity28_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-343435312> .
 
-<http://www.cubrc.org/Data/GivenName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_580944641> a cco:GivenName ;
+<http://www.cubrc.org/Data/PersonGivenName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_580944641> a cco:PersonGivenName ;
     obo:RO_0010001 <http://www.cubrc.org/Data/InformationBearingEntity29_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-746703464> .
 
 <http://www.cubrc.org/Data/InformationBearingEntity10_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-222226264> a cco:InformationBearingEntity ;
@@ -180,9 +180,9 @@
 <http://www.cubrc.org/Data/PostalZone2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_225032857> a cco:PostalZone ;
     cco:designated_by <http://www.cubrc.org/Data/PostalCode2_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-203036578> .
 
-<http://www.cubrc.org/Data/ProperName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_982148573> a cco:ProperName ;
-    obo:BFO_0000051 <http://www.cubrc.org/Data/FamilyName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_738823472>,
-        <http://www.cubrc.org/Data/GivenName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_580944641> .
+<http://www.cubrc.org/Data/PersonFullName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_982148573> a cco:PersonFullName ;
+    obo:BFO_0000051 <http://www.cubrc.org/Data/PersonFamilyName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_738823472>,
+        <http://www.cubrc.org/Data/PersonGivenName1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_580944641> .
 
 <http://www.cubrc.org/Data/ResidentialFacility1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-620888265> a cco:ResidentialFacility ;
     obo:RO_0001025 <http://www.cubrc.org/Data/LocalAdministrativeRegion1_73e320eb-57b1-4bb5-bc2a-b5b85fee61b1_-1971833358>,
