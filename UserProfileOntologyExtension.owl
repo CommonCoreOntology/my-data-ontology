@@ -1,0 +1,160 @@
+@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntologyExtension> .
+
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntologyExtension> rdf:type owl:Ontology ;
+                                                                                              owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2021-10-07/UserProfileOntologyExtension> ;
+                                                                                              owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> ;
+                                                                                              owl:versionInfo "Version 2021-10-07"@en ;
+                                                                                              rdfs:label "User Profile Ontology Extension"@en ;
+                                                                                              rdfs:comment "This file is a part of the User Profile Ontology, which is used to represent basic information about a person typically found in their User Profile. It contains terms not currently found in the mid-level of the Common Core Ontologies."@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/has_value
+cco:has_value rdf:type owl:DatatypeProperty ;
+              rdfs:domain cco:InformationBearingEntity ;
+              rdfs:range xsd:string ;
+              cco:definition "A relationship between an Information Bearing Entity and a string representation."^^xsd:string ;
+              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:string ;
+              rdfs:label "has value"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/EmailAddress
+cco:EmailAddress rdf:type owl:Class ;
+                 rdfs:subClassOf cco:TelecommunicationNetworkIdentifier ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty cco:designates ;
+                                   owl:someValuesFrom cco:EmailBox
+                                 ] ;
+                 cco:definition "A Telecommunication Network Identifier that uniquely identifies an Email Box, is used to direct Email Messages to the designated Email Box, and consists of a local name part followed by '@' followed by a domain name part."@en ;
+                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                 rdfs:label "Email Address"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/FacsimileMachine
+cco:FacsimileMachine rdf:type owl:Class ;
+                     rdfs:subClassOf cco:TelecommunicationInstrument ;
+                     cco:alternative_label "Fax"@en ;
+                     cco:definition "A Telecommunication Instrument that is designed to send and receive copies of Information Content Entities scanned from printed Documents and Images over a Telephone Network."@en ;
+                     cco:definition_source "http://en.wikipedia.org/wiki/Facsimile_machine"^^xsd:anyURI ;
+                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                     rdfs:label "Facsimile Machine"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/FacsimileMachineNumber
+cco:FacsimileMachineNumber rdf:type owl:Class ;
+                           rdfs:subClassOf cco:TelecommunicationNetworkIdentifier ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty cco:designates ;
+                                             owl:someValuesFrom cco:TelecommunicationEndpoint
+                                           ] ;
+                           cco:definition "A Telecommunication Network Identifier that uniquely identifies a Telecommunication Endpoint, which is typically assigned to a Facsimile Machine, as prescribed by a Telephone Account."@en ;
+                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                           rdfs:label "Facsimile Machine Number"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PersonFamilyName
+cco:PersonFamilyName rdf:type owl:Class ;
+                     rdfs:subClassOf cco:ProperName ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                       owl:someValuesFrom cco:PersonFullName
+                                     ] ;
+                     cco:definition "A Proper Name that uniquely identifies a Person's family or clan or tribe."@en ;
+                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                     rdfs:label "Person Family Name"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PersonFullName
+cco:PersonFullName rdf:type owl:Class ;
+                   rdfs:subClassOf cco:ProperName ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty cco:designates ;
+                                     owl:someValuesFrom cco:Person
+                                   ] ;
+                   cco:definition "A Proper Name that designates a Person and is composed of all the names that when ordered correctly uniquely refer to that person."@en ;
+                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                   rdfs:label "Person Full Name"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PersonGivenName
+cco:PersonGivenName rdf:type owl:Class ;
+                    rdfs:subClassOf cco:ProperName ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                      owl:someValuesFrom cco:PersonFullName
+                                    ] ;
+                    cco:definition "A Proper Name that uniquely identifies a Person within some family or clan."@en ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                    rdfs:label "Person Given Name"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PostalCode
+cco:PostalCode rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( cco:CodeIdentifier
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty cco:designates ;
+                                                            owl:someValuesFrom cco:PostalZone
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf cco:CodeIdentifier ;
+               cco:definition "A Code Identifier that designates some Postal Zone."@en ;
+               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+               rdfs:label "Postal Code"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PostalZone
+cco:PostalZone rdf:type owl:Class ;
+               rdfs:subClassOf cco:GeopoliticalEntity ;
+               cco:definition "A Local Administrative Region that delimits a set of delivery points within a postal system of some government."@en ;
+               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+               rdfs:label "Postal Zone"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfTelecommunicationEndpointAssignment
+cco:StasisOfTelecommunicationEndpointAssignment rdf:type owl:Class ;
+                                                rdfs:subClassOf cco:Stasis ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                                  owl:someValuesFrom cco:TelecommunicationEndpoint
+                                                                ] ;
+                                                cco:definition "A Stasis wherein a Telecommunication Endpoint is assigned to a telecommunication instrument."@en ;
+                                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                                                rdfs:label "Stasis of Telecommunication Endpoint Assignment"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/TelecommunicationNetworkIdentifier
+cco:TelecommunicationNetworkIdentifier rdf:type owl:Class ;
+                                       rdfs:subClassOf cco:DesignativeInformationContentEntity ;
+                                       cco:definition "A Designative Information Content Entity that uniquely identifies a Telecommunication Network or some set of information inhering in such a network, often for the purpose of exchanging information with the identified entity."@en ;
+                                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                                       rdfs:label "Telecommunication Network Identifier"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/TelephoneNumber
+cco:TelephoneNumber rdf:type owl:Class ;
+                    rdfs:subClassOf cco:TelecommunicationNetworkIdentifier ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty cco:designates ;
+                                      owl:someValuesFrom cco:TelecommunicationEndpoint
+                                    ] ;
+                    cco:definition "A Telecommunication Network Identifier that uniquely identifies a Telecommunication Endpoint, which is typically assigned to a Telephone, as prescribed by a Telephone Account."@en ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                    rdfs:label "Telephone Number"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
