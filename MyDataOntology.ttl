@@ -13,7 +13,8 @@
                                                                                 rdfs:label "My Data Ontology"@en ;
                                                                                 rdfs:comment "This file is an ontology module, which contains all the terms used to directly represent a preliminary set of data points, as well as the logical closure of terms from its imported ontologies, which includes a subset from the Common Core Ontologies, Basic Formal Ontology, and OBO Relations Ontology. The seed list of terms used to create this module can be found here:"@en ;
                                                                                 owl:versionInfo "Version 2022-05-18"@en ;
-                                                                                rdfs:comment "The My Data Ontology is an extension of the Common Core Ontologies that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. It is designed to enable a transparent and unified semantics across domains and applications, thus supporting automated integration."@en .
+                                                                                rdfs:comment "The My Data Ontology is an extension of the Common Core Ontologies that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. It is designed to enable a transparent and unified semantics across domains and applications, thus supporting automated integration."@en ,
+                                                                                             "Normal development should not be done in this file directly. Use the developer's version located in ./dev."@en .
 
 #################################################################
 #    Annotation properties
