@@ -6,13 +6,14 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology> .
+@base <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataOntology> .
 
-<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology> rdf:type owl:Ontology ;
-                                                                                     owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2021-10-07/UserProfileOntology> ;
-                                                                                     owl:versionInfo "Version 2021-10-07"@en ;
-                                                                                     rdfs:comment "This ontology is used to represent basic information about a person typically found in their User Profile. This file contains all the direct terms used to represent relevant data fields, such as Home Address, as well as the logical closure of terms from imported ontologies, which includes a subset from the Common Core Ontologies and the Basic Formal Ontology. The seed list of terms can be found here: https://github.com/CommonCoreOntology/UserProfileOntology/blob/master/documents/user_profile_base_term_list.csv"@en ;
-                                                                                     rdfs:label "User Profile Ontology"@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataOntology> rdf:type owl:Ontology ;
+                                                                                owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2022-05-18/MyDataOntology> ;
+                                                                                rdfs:label "My Data Ontology"@en ;
+                                                                                rdfs:comment "This file is an ontology module, which contains all the terms used to directly represent a preliminary set of data points, as well as the logical closure of terms from its imported ontologies, which includes a subset from the Common Core Ontologies, Basic Formal Ontology, and OBO Relations Ontology. The seed list of terms used to create this module can be found here:"@en ;
+                                                                                owl:versionInfo "Version 2022-05-18"@en ;
+                                                                                rdfs:comment "The My Data Ontology is an extension of the Common Core Ontologies that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. It is designed to enable a transparent and unified semantics across domains and applications, thus supporting automated integration."@en .
 
 #################################################################
 #    Annotation properties
