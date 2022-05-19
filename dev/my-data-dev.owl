@@ -5,14 +5,14 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntologyExtension> .
+@base <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension> .
 
-<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntologyExtension> rdf:type owl:Ontology ;
-                                                                                              owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2021-10-07/UserProfileOntologyExtension> ;
-                                                                                              owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> ;
-                                                                                              owl:versionInfo "Version 2021-10-07"@en ;
-                                                                                              rdfs:label "User Profile Ontology Extension"@en ;
-                                                                                              rdfs:comment "This file is a part of the User Profile Ontology, which is used to represent basic information about a person typically found in their User Profile. It contains terms not currently found in the mid-level of the Common Core Ontologies."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension> rdf:type owl:Ontology ;
+                                                                                 owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2022-05-07/MyDataExtension> ;
+                                                                                 owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> ;
+                                                                                 rdfs:comment "This file contains terms that are part of the My Data Ontology, which is used to enable a consistent semantics for representing personal data. It contains terms not currently found in the mid-level of the Common Core Ontologies and is meant to be used by developers who need to modify or add new content to the My Data Ontology."@en ;
+                                                                                 owl:versionInfo "Version 2022-05-19"@en ;
+                                                                                 rdfs:label "My Data Ontology Extension"@en .
 
 #################################################################
 #    Data properties
