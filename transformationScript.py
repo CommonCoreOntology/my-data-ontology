@@ -23,7 +23,7 @@ def pds_firstname(person, firstname):
             """
             return triples
     except Exception as e:
-        print(e)
+        print("FirstName:" + e)
 
 
 def pds_email(person, email):
@@ -49,8 +49,8 @@ def pds_email(person, email):
                cco:has_text_value "{email}".
             """
             return triples
-    except:
-        print("Unable to Mapping Email")
+    except Exception as e:
+        print("Email:" + e)
 
 
 ##############################
@@ -92,7 +92,7 @@ def my_data_org_transformations():
                 print(pds_firstname(person_uuid, firstname))
 
     except Exception as e:
-        print(e)
+        print("Reading my data" + e)
 
 
 my_data_org_transformations()
