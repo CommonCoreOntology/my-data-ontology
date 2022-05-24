@@ -4,7 +4,26 @@ my_data_org_raw = './dev/my-data-org-source-data.csv'
 
 ##############################
 # Mappings
+# Note: Each Function creates triples independently from the source data
 ##############################
+
+
+def pds_firstname(person, firstname):
+    try:
+        if firstname != "":
+            firstname_uuid = uuid.uuid4()
+            triples = f"""
+            {person} cco:designated_by cco:PersonGivenName_{firstname_uuid} . 
+
+            cco:PersonGivenName_{firstname_uuid} a cco:PersonGivenName ;
+                obo:RO_0010001 cco:InformationBearingEntity_PersonGivenName_{firstname_uuid} . 
+            
+            cco:InformationBearingEntity_PersonGivenName_{firstname_uuid} a cco:InformationBearingEntity ;
+               cco:has_text_value "{firstname}".
+            """
+            return triples
+    except Exception as e:
+        print(e)
 
 
 def pds_email(person, email):
@@ -28,7 +47,6 @@ def pds_email(person, email):
             
             cco:InformationBearingEntity_EmailAddress_{email_uuid} a cco:InformationBearingEntity ;
                cco:has_text_value "{email}".
-        
             """
             return triples
     except:
@@ -71,6 +89,7 @@ def my_data_org_transformations():
                 employerfax = row[20]
 
                 print(pds_email(person_uuid, email))
+                print(pds_firstname(person_uuid, firstname))
 
     except Exception as e:
         print(e)
