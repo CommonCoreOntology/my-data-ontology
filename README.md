@@ -12,12 +12,11 @@
     | ------------ | ----------------------- |
     | Investopedia | Full Name               |
     | Investopedia | Social Security Number  |
-    | Investopedia | Driver’s license        |
+    | Investopedia | Driver’s license Number      |
     | Investopedia | Mailing address         |
-    | Investopedia | Credit card information |
+    | Investopedia | Credit card Number |
     | Investopedia | Passport information    |
-    | Investopedia | Financial information   |
-    | Investopedia | Medical records         |
+
 
 3. Using the [My data ontology](https://github.com/I-AM-project/my-data-ontology/blob/master/MyDataOntology.ttl), create an ontological representation for all the attributes in the data model. Add the represention to the table. Below is an example for the first row. 
 
