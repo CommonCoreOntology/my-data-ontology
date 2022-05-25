@@ -8,14 +8,15 @@
 1. Select a defined data model for personal information 
 2. Categorized all the attributes of the data model into a table. See the example below:
 
-    | Data Model   | Attributes              |
-    | ------------ | ----------------------- |
-    | Investopedia | Full Name               |
-    | Investopedia | Social Security Number  |
-    | Investopedia | Driver’s license Number      |
-    | Investopedia | Mailing address         |
-    | Investopedia | Credit card Number |
-    | Investopedia | Passport information    |
+    | Data Model   | Attributes              | Example |
+    | ------------ | ----------------------- | ------|
+    | NAVIGATIONAPP | Toll Preference (Tolls-OK or AvoidTolls | Tolls|  
+    | Investopedia | Full Name               | John Doe |
+    | Investopedia | Social Security Number  | 123 456 7890 |
+    | Investopedia | Driver’s license Number      | S1234567898765 |
+    | Investopedia | Mailing address         | 21 Main St., Roosevelt Island, New York, NY, US |
+    | Investopedia | Credit card Number | 2837362289292992 |
+    | Investopedia | Passport information    | ?? |
 
 
 3. Using the [My data ontology](https://github.com/I-AM-project/my-data-ontology/blob/master/MyDataOntology.ttl), create an ontological representation for all the attributes in the data model. Add the represention to the table. Below is an example for the first row. 
