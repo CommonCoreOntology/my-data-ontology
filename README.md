@@ -10,7 +10,7 @@
 
     | Data Model   | Attributes              | Example |
     | ------------ | ----------------------- | ------|
-    | NAVIGATIONAPP | Toll Preference (Tolls-OK or AvoidTolls | Tolls|  
+    | Navigation App | Toll Preference | Tolls OK/Avoid Tolls |  
     | Investopedia | Full Name               | John Doe |
     | Investopedia | Social Security Number  | 123 456 7890 |
     | Investopedia | Driver’s license Number      | S1234567898765 |
