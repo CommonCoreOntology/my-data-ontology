@@ -1,11 +1,11 @@
 # My Data Ontology
-> The My Data Ontology (MDO) is an extension of the [Common Core Ontologies (CCO)](https://github.com/CommonCoreOntology/CommonCoreOntologies) that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. As an extension of CCO, MDO also inherits and re-uses [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO) and [OBO Relation Ontology](https://github.com/oborel/obo-relations). Use of the methodology and standards derived from CCO, BFO, and RO, provides an integration layer for personal data that enables a transparent and unified semantics across domains and applications.
+> The My Data Ontology (MDO) is a standards-based data format for the individual, which allows uniquely formed data from vendors to be transformed into this common format and better utilized by the individual.  MDO is an extension of the [Common Core Ontologies (CCO)](https://github.com/CommonCoreOntology/CommonCoreOntologies) that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. As an extension of CCO, MDO also inherits and re-uses [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO) and ISO international standards and [OBO Relation Ontology](https://github.com/oborel/obo-relations). Use of the methodology and standards derived from CCO, BFO, and RO, provides an integration layer for personal data that enables a transparent and unified semantics across domains and applications.
 
 ![Ontology Archetecture](./onto_arch.png)
 <br/>
 <br/>
-## Mapping Data Models to the My Data Ontology
-1. Select a defined data model for personal information 
+## How Vendors Map their Data Models to the My Data Ontology
+1. Start with your unique data model and select the terms of interest to your users. 
 2. Categorized all the attributes of the data model into a table. See the example below:
 
     | Data Model   | Attributes              | Example |
