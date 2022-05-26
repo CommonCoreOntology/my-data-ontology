@@ -4,7 +4,7 @@
 ![Ontology Archetecture](./onto_arch.png)
 <br/>
 <br/>
-## How Vendors Map their Data Models to the My Data Ontology
+## How Vendors can Map their Data Models to the My Data Ontology
 1. Start with your unique data model and select the terms of interest to your users. 
 2. Categorized all the attributes of the data model into a table. See the example below:
 
