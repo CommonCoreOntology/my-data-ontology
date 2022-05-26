@@ -21,7 +21,7 @@
 
 3. Using the [My data ontology](https://github.com/I-AM-project/my-data-ontology/blob/master/MyDataOntology.ttl), create an ontological representation for all the attributes in the data model. Add the represention to the table. Below is an example for the first row. 
 
-    | Data Model   | Attributes | My Data Ontology Representation                                   |
+    | Data Model Source   | Attributes | My Data Ontology Representation                                   |
     | ------------ | ---------- | ----------------------------------------------------------------- |
     | Investopedia | Full Name  | cco:Person, cco:designated_by, cco:PersonGivenName, cco:has_value |
 
