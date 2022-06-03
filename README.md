@@ -1,27 +1,27 @@
 # My Data Ontology
-> The My Data Ontology (MDO) is an extension of the [Common Core Ontologies (CCO)](https://github.com/CommonCoreOntology/CommonCoreOntologies) that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. As an extension of CCO, MDO also inherits and re-uses [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO) and [OBO Relation Ontology](https://github.com/oborel/obo-relations). Use of the methodology and standards derived from CCO, BFO, and RO, provides an integration layer for personal data that enables a transparent and unified semantics across domains and applications.
+> The My Data Ontology (MDO) is a standards-based data format for the individual, which allows uniquely formed data from vendors to be transformed into this common format and better utilized by the individual.  MDO is an extension of the [Common Core Ontologies (CCO)](https://github.com/CommonCoreOntology/CommonCoreOntologies) that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. As an extension of CCO, MDO also inherits and re-uses [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO), an ISO international standard, and [OBO Relation Ontology](https://github.com/oborel/obo-relations). Use of the methodology and standards derived from CCO, BFO, and RO, provides an integration layer for personal data that enables a transparent and unified semantics across domains and applications.
 
 ![Ontology Archetecture](./onto_arch.png)
 <br/>
 <br/>
-## Mapping Data Models to the My Data Ontology
-1. Select a defined data model for personal information 
+## How Vendors can Map their Data Models to the My Data Ontology
+1. Start with your unique data model and select the terms of interest to your users. 
 2. Categorized all the attributes of the data model into a table. See the example below:
 
-    | Data Model   | Attributes              |
-    | ------------ | ----------------------- |
-    | Investopedia | Full Name               |
-    | Investopedia | Social Security Number  |
-    | Investopedia | Driver’s license        |
-    | Investopedia | Mailing address         |
-    | Investopedia | Credit card information |
-    | Investopedia | Passport information    |
-    | Investopedia | Financial information   |
-    | Investopedia | Medical records         |
+    | Data Model   | Attributes              | Example |
+    | ------------ | ----------------------- | ------|
+    | Navigation App | Toll Preference | Tolls OK/Avoid Tolls |  
+    | Investopedia | Full Name               | John Doe |
+    | Investopedia | Social Security Number  | 123 456 7890 |
+    | Investopedia | Driver’s license Number      | S1234567898765 |
+    | Investopedia | Mailing address         | 21 Main St., Roosevelt Island, New York, NY, US |
+    | Investopedia | Credit card Number | 2837362289292992 |
+    | Investopedia | Passport information    | ?? |
+
 
 3. Using the [My data ontology](https://github.com/I-AM-project/my-data-ontology/blob/master/MyDataOntology.ttl), create an ontological representation for all the attributes in the data model. Add the represention to the table. Below is an example for the first row. 
 
-    | Data Model   | Attributes | My Data Ontology Representation                                   |
+    | Data Model Source   | Attributes | My Data Ontology Representation                                   |
     | ------------ | ---------- | ----------------------------------------------------------------- |
     | Investopedia | Full Name  | cco:Person, cco:designated_by, cco:PersonGivenName, cco:has_value |
 
