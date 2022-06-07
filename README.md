@@ -4,6 +4,10 @@
 ![Ontology Archetecture](./onto_arch.png)
 <br/>
 <br/>
+
+## Examples of items in Diagram above can be found:
+- [Source Data](https://github.com/I-AM-project/my-data-ontology/blob/master/dev/my-data-org-source-data.csv)
+- [Mapping](https://github.com/I-AM-project/my-data-ontology/blob/master/dev/my-data-org-source-data.csv)
 ## How Vendors can Map their Data Models to the My Data Ontology
 1. Start with your data source and data model (if available) and select the attributes of interest to your users.
 2. Categorized all the attributes of the data model into a table. See example below:
