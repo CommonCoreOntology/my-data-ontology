@@ -5,25 +5,26 @@
 <br/>
 <br/>
 ## How Vendors can Map their Data Models to the My Data Ontology
-1. Start with your unique data model and select the terms of interest to your users. 
-2. Categorized all the attributes of the data model into a table. See the example below:
+1. Start with your data source and data model (if available) and select the attributes of interest to your users.
+2. Categorized all the attributes of the data model into a table. See example below:
 
-    | Data Model   | Attributes              | Example |
+    | Data Model   | Attributes              | Example Data Value |
     | ------------ | ----------------------- | ------|
-    | Navigation App | Toll Preference | Tolls OK/Avoid Tolls |  
+    | My Navigation App | Toll Preference | Avoid Tolls |
+    | My Navigation App | License Plate # | DTA 1234 |  
     | Investopedia | Full Name               | John Doe |
     | Investopedia | Social Security Number  | 123 456 7890 |
     | Investopedia | Driver’s license Number      | S1234567898765 |
     | Investopedia | Mailing address         | 21 Main St., Roosevelt Island, New York, NY, US |
     | Investopedia | Credit card Number | 2837362289292992 |
-    | Investopedia | Passport information    | ?? |
+    | Investopedia | Passport Expiration Date    | 2024-08-30 |
 
 
 3. Using the [My data ontology](https://github.com/I-AM-project/my-data-ontology/blob/master/MyDataOntology.ttl), create an ontological representation for all the attributes in the data model. Add the represention to the table. Below is an example for the first row. 
 
     | Data Model Source   | Attributes | My Data Ontology Representation                                   |
     | ------------ | ---------- | ----------------------------------------------------------------- |
-    | Investopedia | Full Name  | cco:Person, cco:designated_by, cco:PersonGivenName, cco:has_value |
+    | Investopedia | Full Name  | cco:Person, cco:designated_by, cco:PersonName, cco:has_value |
 
 4. Complete the process until all the attributes have a corresponding representation. 
    
