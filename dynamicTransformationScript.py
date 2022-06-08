@@ -33,7 +33,6 @@ def createTriples(mapping, data_value):
 
             iter_count += 1
 
-
         return conforming_triples + " '" + data_value + "'. \n\n"
     except Exception as e:
         print("Error Creating triples: " + e)
@@ -57,7 +56,6 @@ def main():
                 data_attribute = row[0] # Get the key for my_data_map 
                 my_data_map[data_attribute] = row[1:] # Assigns the MyDataOntologyExpansion to the key 
             
-            
         # Reading the raw data file
         with open(raw_data_file, newline='') as raw_data:
             raw_data_reader = csv.reader(raw_data, delimiter=',', quotechar='|')
@@ -75,8 +73,6 @@ def main():
             
         output_file.close()               
     
-
-              
     except Exception as e:
         print("Error Reading Raw data: " + e)
 
