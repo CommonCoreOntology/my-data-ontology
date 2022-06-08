@@ -38,12 +38,6 @@ def createTriples(mapping, data_value):
         print("Error Creating triples: " + e)
 
 
-
-            
-
-
-
-
 def main():
     try:
         output_file = open(conforming_triples_output, "w")
