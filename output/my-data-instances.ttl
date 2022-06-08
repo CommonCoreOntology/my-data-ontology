@@ -1,0 +1,120 @@
+ cco:Person cco:designated_by cco:PersonGivenName. 
+ cco:PersonGivenName cco:has_value 'Jane'. 
+
+ cco:Person cco:designated_by cco:PersonFamilyName. 
+ cco:PersonFamilyName cco:has_value 'Doe'. 
+
+ cco:Person cco:is_object_of cco:Birth. 
+ cco:Birth cco:occurs_on cco:Day. 
+ cco:Day cco:designated_by cco:DateIdentifier. 
+ cco:DateIdentifier cco:has_value '12/31/99'. 
+
+ cco:Person cco:agent_in cco:ActOfResiding. 
+ cco:ActOfResiding obo:RO_0000057 cco:ResidentialFacility. 
+ cco:ResidentialFacility cco:designated_by cco:StreetAddress. 
+ cco:StreetAddress cco:has_value '1234 Walnut St'. 
+
+ cco:Person cco:agent_in cco:ActOfResiding. 
+ cco:ActOfResiding obo:RO_0000057 cco:ResidentialFacility. 
+ cco:ResidentialFacility obo:RO_0001025 cco:LocalAdministrativeRegion. 
+ cco:LocalAdministrativeRegion cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'Springfield'. 
+
+ cco:Person cco:agent_in cco:ActOfResiding. 
+ cco:ActOfResiding obo:RO_0000057 cco:ResidentialFacility. 
+ cco:ResidentialFacility obo:RO_0001025 cco:LocalAdministrativeRegion. 
+ cco:LocalAdministrativeRegion obo:BFO_0000050 cco:FirstOrderAdministrativeRegion. 
+ cco:FirstOrderAdministrativeRegion cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'MO'. 
+
+ cco:Person cco:agent_in cco:ActOfResiding. 
+ cco:ActOfResiding obo:RO_0000057 cco:ResidentialFacility. 
+ cco:ResidentialFacility obo:RO_0001025 cco:LocalAdministrativeRegion. 
+ cco:LocalAdministrativeRegion obo:BFO_0000050 cco:FirstOrderAdministrativeRegion. 
+ cco:FirstOrderAdministrativeRegion obo:BFO_0000050 cco:Country. 
+ cco:Country cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'USA'. 
+
+ cco:Person cco:agent_in cco:ActOfResiding. 
+ cco:ActOfResiding obo:RO_0000057 cco:ResidentialFacility. 
+ cco:ResidentialFacility obo:RO_0001025 cco:PostalZone. 
+ cco:PostalZone cco:designated_by cco:PostalCode. 
+ cco:PostalCode cco:has_value '12345'. 
+
+ cco:Person cco:uses cco:EmailBox. 
+ cco:EmailBox obo:RO_0000056 cco:StasisOfTelecommunicationEndpointAssignment. 
+ cco:StasisOfTelecommunicationEndpointAssignment obo:RO_0000057 cco:TelecommunicationEndpoint. 
+ cco:TelecommunicationEndpoint cco:designated_by cco:EmailAddress. 
+ cco:EmailAddress cco:has_value 'janedoe@email.com'. 
+
+ cco:Person cco:uses cco:MobileTelephone. 
+ cco:MobileTelephone obo:RO_0000056 cco:StasisOfTelecommunicationEndpointAssignment. 
+ cco:StasisOfTelecommunicationEndpointAssignment obo:RO_0000057 cco:TelecommunicationEndpoint. 
+ cco:TelecommunicationEndpoint cco:designated_by cco:TelephoneNumber. 
+ cco:TelephoneNumber cco:has_value '617-555-6789'. 
+
+ cco:Person cco:uses cco:LandlineTelephone. 
+ cco:LandlineTelephone obo:RO_0000056 cco:StasisOfTelecommunicationEndpointAssignment. 
+ cco:StasisOfTelecommunicationEndpointAssignment obo:RO_0000057 cco:TelecommunicationEndpoint. 
+ cco:TelecommunicationEndpoint cco:designated_by cco:TelephoneNumber. 
+ cco:TelephoneNumber cco:has_value '555-456-7890'. 
+
+ cco:Person obo:RO_0000053 cco:OccupationRole. 
+ cco:OccupationRole cco:described_by cco:NominalMeasurementInformationContentEntity. 
+ cco:NominalMeasurementInformationContentEntity cco:has_value 'Lead Developer'. 
+
+ cco:Person obo:RO_0000053 cco:OccupationRole. 
+ cco:OccupationRole cco:has_organizational_context cco:Organization. 
+ cco:Organization cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'Tech Giant'. 
+
+ cco:Organization obo:RO_0000053 cco:Capability. 
+ cco:Capability cco:is_measured_by_nominal cco:DescriptiveMeasurementContentEntity. 
+ cco:DescriptiveMeasurementContentEntity cco:has_value 'Financial Planning'. 
+
+ cco:Organization cco:agent_in cco:ActOfInhabitancy. 
+ cco:ActOfInhabitancy cco:has_object cco:Facility. 
+ cco:Facility cco:designated_by cco:StreetAddress. 
+ cco:StreetAddress cco:has_value '12345 Business Parkway Suite 100'. 
+
+ cco:Organization cco:agent_in cco:ActOfInhabitancy. 
+ cco:ActOfInhabitancy cco:has_object cco:Facility. 
+ cco:Facility obo:RO_0001025 cco:LocalAdministrativeRegion. 
+ cco:LocalAdministrativeRegion cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'Springfield'. 
+
+ cco:Organization cco:agent_in cco:ActOfInhabitancy. 
+ cco:ActOfInhabitancy cco:has_object cco:Facility. 
+ cco:Facility obo:RO_0001025 cco:LocalAdministrativeRegion. 
+ cco:LocalAdministrativeRegion obo:BFO_0000050 cco:FirstOrderAdministrativeRegion. 
+ cco:FirstOrderAdministrativeRegion cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'MO'. 
+
+ cco:Organization cco:agent_in cco:ActOfInhabitancy. 
+ cco:ActOfInhabitancy cco:has_object cco:Facility. 
+ cco:Facility obo:RO_0001025 cco:PostalZone. 
+ cco:PostalZone cco:designated_by cco:PostalCode. 
+ cco:PostalCode cco:has_value '14521'. 
+
+ cco:Organization cco:agent_in cco:ActOfInhabitancy. 
+ cco:ActOfInhabitancy cco:has_object cco:Facility. 
+ cco:Facility obo:RO_0001025 cco:LocalAdministrativeRegion. 
+ cco:LocalAdministrativeRegion obo:BFO_0000050 cco:FirstOrderAdministrativeRegion. 
+ cco:FirstOrderAdministrativeRegion obo:BFO_0000050 cco:Country. 
+ cco:Country cco:designated_by cco:DesignativeName. 
+ cco:DesignativeName cco:has_value 'USA'. 
+
+ cco:Organization cco:agent_in cco:ActOfOwnership. 
+ cco:ActOfOwnership cco:has_object cco:Telephone. 
+ cco:Telephone obo:RO_0000056 cco:StasisOfTelecommunicationEndpointAssignment. 
+ cco:StasisOfTelecommunicationEndpointAssignment obo:RO_0000057 cco:TelecommunicationEndpoint. 
+ cco:TelecommunicationEndpoint cco:designated_by cco:TelephoneNumber. 
+ cco:TelephoneNumber cco:has_value '555-222-4321'. 
+
+ cco:Organization cco:agent_in cco:ActOfOwnership. 
+ cco:ActOfOwnership cco:has_object cco:FacsimileMachine. 
+ cco:FacsimileMachine obo:RO_0000056 cco:StasisOfTelecommunicationEndpointAssignment. 
+ cco:StasisOfTelecommunicationEndpointAssignment obo:RO_0000057 cco:TelecommunicationEndpoint. 
+ cco:TelecommunicationEndpoint cco:designated_by cco:FacsimileMachineNumber. 
+ cco:FacsimileMachineNumber cco:has_value '555-999-0987'. 
+

@@ -1,4 +1,5 @@
 import csv
+from curses import raw
 import uuid
 
 # Two Inputs Files 
@@ -9,12 +10,44 @@ mapping_file = './dev/mapping-mydata_org-mdo.csv'
 
 # Output file
 ##################################################
-conforming_triples = './output/my-data-instances'
+conforming_triples_output = './output/my-data-instances.ttl'
 ##################################################
+
+
+
+def createTriples(mapping, data_value):
+    try:
+        conforming_triples = ""
+        triple_index = 0
+        iter_count = 1
+        while triple_index < len(mapping):
+            if mapping[triple_index] == "":
+                break
+
+            # print(iter_count % 3, triple_index, mapping[triple_index])
+            if  iter_count  % 3 == 0:
+                conforming_triples += " " + mapping[triple_index] + ". \n" 
+            else:
+                conforming_triples += " " + mapping[triple_index]
+                triple_index += 1
+
+            iter_count += 1
+
+
+        return conforming_triples + " '" + data_value + "'. \n\n"
+    except Exception as e:
+        print("Error Creating triples: " + e)
+
+
+
+            
+
+
 
 
 def main():
     try:
+        output_file = open(conforming_triples_output, "w")
         my_data_map = {} # My Data dictional - keys: Data Proptery , Value: MyDataOntologyExpansion
 
         # Reading the mapping file 
@@ -27,10 +60,21 @@ def main():
             
         # Reading the raw data file
         with open(raw_data_file, newline='') as raw_data:
-            print(my_data_map) # Prints the dictionay  
+            raw_data_reader = csv.reader(raw_data, delimiter=',', quotechar='|')
+            headers = next(raw_data_reader)
+            for row in raw_data_reader: # Iterates though each row of the raw data
+                for index, col in enumerate(row): # Itererates though each col of the raw data 
+                    attribute = headers[index]
+                    data_value = col
+                    if attribute not in my_data_map.keys(): # Check the map covers the terms 
+                        print("There is not mapping for: " + attribute)
+                    else: 
+                        mapping =  my_data_map[attribute]
+                        
+                        output_file.write(createTriples(mapping,data_value ))
             
-            # TODO 
-            # Use the my Data Map to match the raw data to the correct mapping
+        output_file.close()               
+    
 
               
     except Exception as e:
