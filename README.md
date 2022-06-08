@@ -1,6 +1,9 @@
 # My Data Ontology
 > The My Data Ontology (MDO) is a standards-based data format for the individual, which allows uniquely formed data from vendors to be transformed into this common format and better utilized by the individual.  MDO is an extension of the [Common Core Ontologies (CCO)](https://github.com/CommonCoreOntology/CommonCoreOntologies) that provides a standardized extensible semantics for representing personal data, such as that found in a user profile or wallet. As an extension of CCO, MDO also inherits and re-uses [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO), an ISO international standard, and [OBO Relation Ontology](https://github.com/oborel/obo-relations). Use of the methodology and standards derived from CCO, BFO, and RO, provides an integration layer for personal data that enables a transparent and unified semantics across domains and applications.
 
+## View Task 
+https://github.com/I-AM-project/tasks-for-volunteers/tree/main/My-Data-Ontology
+
 ![Ontology Archetecture](./onto_arch.png)
 <br/>
 <br/>
