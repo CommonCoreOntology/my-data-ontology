@@ -1,0 +1,22 @@
+mydata.org-property,rdf-type,relation,rdf type,relation,rdf type,relation,rdf type,relation,rdf type,relation,rdf type,relation,rdf type,relation
+email,cco:Person,cco:uses,cco:EmailBox,obo:RO_0000056,cco:StasisOfTelecommunicationEndpointAssignment,obo:RO_0000057,cco:TelecommunicationEndpoint,cco:designated_by,cco:EmailAddress,cco:has_value,,,,
+firstname,cco:Person,cco:designated_by,cco:PersonGivenName,cco:has_value,,,,,,,,,,
+lastname,cco:Person,cco:designated_by,cco:PersonFamilyName,cco:has_value,,,,,,,,,,
+birthdate,cco:Person,cco:is_object_of,cco:Birth,cco:occurs_on,cco:Day,cco:designated_by,cco:DateIdentifier,cco:has_value,,,,,,
+mailingstreet,cco:Person,cco:agent_in,cco:ActOfResiding,obo:RO_0000057,cco:ResidentialFacility,cco:designated_by,cco:StreetAddress,cco:has_value,,,,,,
+mailingcity,cco:Person,cco:agent_in,cco:ActOfResiding,obo:RO_0000057,cco:ResidentialFacility,obo:RO_0001025,cco:LocalAdministrativeRegion,cco:designated_by,cco:DesignativeName,cco:has_value,,,,
+mailingstate,cco:Person,cco:agent_in,cco:ActOfResiding,obo:RO_0000057,cco:ResidentialFacility,obo:RO_0001025,cco:LocalAdministrativeRegion,obo:BFO_0000050,cco:FirstOrderAdministrativeRegion,cco:designated_by,cco:DesignativeName,cco:has_value,,
+mailingpostcode,cco:Person,cco:agent_in,cco:ActOfResiding,obo:RO_0000057,cco:ResidentialFacility,obo:RO_0001025,cco:PostalZone,cco:designated_by,cco:PostalCode,cco:has_value,,,,
+mailingcountry,cco:Person,cco:agent_in,cco:ActOfResiding,obo:RO_0000057,cco:ResidentialFacility,obo:RO_0001025,cco:LocalAdministrativeRegion,obo:BFO_0000050,cco:FirstOrderAdministrativeRegion,obo:BFO_0000050,cco:Country,cco:designated_by,cco:DesignativeName,cco:has_value
+homephonenumber,cco:Person,cco:uses,cco:LandlineTelephone,obo:RO_0000056,cco:StasisOfTelecommunicationEndpointAssignment,obo:RO_0000057,cco:TelecommunicationEndpoint,cco:designated_by,cco:TelephoneNumber,cco:has_value,,,,
+mobilephonenumber,cco:Person,cco:uses,cco:MobileTelephone,obo:RO_0000056,cco:StasisOfTelecommunicationEndpointAssignment,obo:RO_0000057,cco:TelecommunicationEndpoint,cco:designated_by,cco:TelephoneNumber,cco:has_value,,,,
+employername,cco:Person,obo:RO_0000053,cco:OccupationRole,cco:has_organizational_context,cco:Organization,cco:designated_by,cco:DesignativeName,cco:has_value,,,,,,
+employerindustry,cco:Organization,obo:RO_0000053,cco:Capability,cco:is_measured_by_nominal,cco:DescriptiveMeasurementContentEntity,cco:has_value,,,,,,,,
+employerstreet,cco:Organization,cco:agent_in,cco:ActOfInhabitancy,cco:has_object,cco:Facility,cco:designated_by,cco:StreetAddress,cco:has_value,,,,,,
+employercity,cco:Organization,cco:agent_in,cco:ActOfInhabitancy,cco:has_object,cco:Facility,obo:RO_0001025,cco:LocalAdministrativeRegion,cco:designated_by,cco:DesignativeName,cco:has_value,,,,
+employerstate,cco:Organization,cco:agent_in,cco:ActOfInhabitancy,cco:has_object,cco:Facility,obo:RO_0001025,cco:LocalAdministrativeRegion,obo:BFO_0000050,cco:FirstOrderAdministrativeRegion,cco:designated_by,cco:DesignativeName,cco:has_value,,
+employerpostcode,cco:Organization,cco:agent_in,cco:ActOfInhabitancy,cco:has_object,cco:Facility,obo:RO_0001025,cco:PostalZone,cco:designated_by,cco:PostalCode,cco:has_value,,,,
+employercountry,cco:Organization,cco:agent_in,cco:ActOfInhabitancy,cco:has_object,cco:Facility,obo:RO_0001025,cco:LocalAdministrativeRegion,obo:BFO_0000050,cco:FirstOrderAdministrativeRegion,obo:BFO_0000050,cco:Country,cco:designated_by,cco:DesignativeName,cco:has_value
+employerphone,cco:Organization,cco:agent_in,cco:ActOfOwnership,cco:has_object,cco:Telephone,obo:RO_0000056,cco:StasisOfTelecommunicationEndpointAssignment,obo:RO_0000057,cco:TelecommunicationEndpoint,cco:designated_by,cco:TelephoneNumber,cco:has_value,,
+employerfax,cco:Organization,cco:agent_in,cco:ActOfOwnership,cco:has_object,cco:FacsimileMachine,obo:RO_0000056,cco:StasisOfTelecommunicationEndpointAssignment,obo:RO_0000057,cco:TelecommunicationEndpoint,cco:designated_by,cco:FacsimileMachineNumber,cco:has_value,,
+employeetitle,cco:Person,obo:RO_0000053,cco:OccupationRole,cco:described_by,cco:NominalMeasurementInformationContentEntity,cco:has_value,,,,,,,,

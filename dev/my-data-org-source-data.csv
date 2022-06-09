@@ -1,0 +1,2 @@
+firstname,lastname,birthdate,mailingstreet,mailingcity,mailingstate,mailingcountry,mailingpostcode,email,mobilephonenumber,homephonenumber,employeetitle,employername,employerindustry,employerstreet,employercity,employerstate,employerpostcode,employercountry,employeremail,employerphone,employerfax
+Jane,Doe,12/31/99,1234 Walnut St,Springfield,MO,USA,12345,janedoe@email.com,617-555-6789,555-456-7890,Lead Developer,Tech Giant,Financial Planning,12345 Business Parkway Suite 100,Springfield,MO,14521,USA,doe.jane@techgiant.org,555-222-4321,555-999-0987
