@@ -31,6 +31,18 @@ cco:has_value rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  http://www.ontologyrepository.com/CommonCoreOntologies/AutomobileModelGeneration
+cco:AutomobileModelGeneration rdf:type owl:Class ;
+                              rdfs:subClassOf cco:ArtifactDesignContentEntity ;
+                              cco:alternative_label "Automobile Model Year"@en ,
+                                                    "Automobile Series"@en ;
+                              cco:definition "An Artifact Design that prescribes the specific features, trim options, components, and desired functionality of a range of motor vehicles within the context of a specific model produced by a manufacturer."@en ;
+                              cco:example_of_usage "2012 Toyota Camry"@en ,
+                                                   "BMW 3 Serires E46"@en ;
+                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                              rdfs:label "Automobile Model Generation"@en .
+
+
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/EmailAddress
 cco:EmailAddress rdf:type owl:Class ;
                  rdfs:subClassOf cco:TelecommunicationNetworkIdentifier ,
@@ -49,7 +61,7 @@ cco:FacsimileMachine rdf:type owl:Class ;
                      cco:alternative_label "Fax"@en ;
                      cco:definition "A Telecommunication Instrument that is designed to send and receive copies of Information Content Entities scanned from printed Documents and Images over a Telephone Network."@en ;
                      cco:definition_source "http://en.wikipedia.org/wiki/Facsimile_machine"^^xsd:anyURI ;
-                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                      rdfs:label "Facsimile Machine"@en .
 
 
@@ -73,7 +85,7 @@ cco:PersonFamilyName rdf:type owl:Class ;
                                        owl:someValuesFrom cco:PersonFullName
                                      ] ;
                      cco:definition "A Proper Name that uniquely identifies a Person's family or clan or tribe."@en ;
-                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                      rdfs:label "Person Family Name"@en .
 
 
@@ -85,7 +97,7 @@ cco:PersonFullName rdf:type owl:Class ;
                                      owl:someValuesFrom cco:Person
                                    ] ;
                    cco:definition "A Proper Name that designates a Person and is composed of all the names that when ordered correctly uniquely refer to that person."@en ;
-                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                    rdfs:label "Person Full Name"@en .
 
 
@@ -97,7 +109,7 @@ cco:PersonGivenName rdf:type owl:Class ;
                                       owl:someValuesFrom cco:PersonFullName
                                     ] ;
                     cco:definition "A Proper Name that uniquely identifies a Person within some family or clan."@en ;
-                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                     rdfs:label "Person Given Name"@en .
 
 
@@ -113,7 +125,7 @@ cco:PostalCode rdf:type owl:Class ;
                                    ] ;
                rdfs:subClassOf cco:CodeIdentifier ;
                cco:definition "A Code Identifier that designates some Postal Zone."@en ;
-               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                rdfs:label "Postal Code"@en .
 
 
@@ -121,7 +133,7 @@ cco:PostalCode rdf:type owl:Class ;
 cco:PostalZone rdf:type owl:Class ;
                rdfs:subClassOf cco:GeopoliticalEntity ;
                cco:definition "A Local Administrative Region that delimits a set of delivery points within a postal system of some government."@en ;
-               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                rdfs:label "Postal Zone"@en .
 
 
@@ -133,7 +145,7 @@ cco:StasisOfTelecommunicationEndpointAssignment rdf:type owl:Class ;
                                                                   owl:someValuesFrom cco:TelecommunicationEndpoint
                                                                 ] ;
                                                 cco:definition "A Stasis wherein a Telecommunication Endpoint is assigned to a telecommunication instrument."@en ;
-                                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                                                 rdfs:label "Stasis of Telecommunication Endpoint Assignment"@en .
 
 
@@ -141,7 +153,7 @@ cco:StasisOfTelecommunicationEndpointAssignment rdf:type owl:Class ;
 cco:TelecommunicationNetworkIdentifier rdf:type owl:Class ;
                                        rdfs:subClassOf cco:DesignativeInformationContentEntity ;
                                        cco:definition "A Designative Information Content Entity that uniquely identifies a Telecommunication Network or some set of information inhering in such a network, often for the purpose of exchanging information with the identified entity."@en ;
-                                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
+                                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
                                        rdfs:label "Telecommunication Network Identifier"@en .
 
 
@@ -155,6 +167,58 @@ cco:TelephoneNumber rdf:type owl:Class ;
                     cco:definition "A Telecommunication Network Identifier that uniquely identifies a Telecommunication Endpoint, which is typically assigned to a Telephone, as prescribed by a Telephone Account."@en ;
                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/UserProfileOntology"^^xsd:anyURI ;
                     rdfs:label "Telephone Number"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/VehicleIdentificationNumber
+cco:VehicleIdentificationNumber rdf:type owl:Class ;
+                                rdfs:subClassOf cco:CodeIdentifier ;
+                                cco:alternative_label "VIN"@en ;
+                                cco:definition "A Designative Information Content Entity that desigantes a motor or towed vehicle within the context of the International Organization for Standardization 3779 and 3780."@en ;
+                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                                rdfs:label "Vehicle Identification Number"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/AgeMeasurement
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/AgeMeasurement> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf cco:ArtifactDesignContentEntity ;
+                                                                                               cco:definition "A Measurement of a temporal interval that a History of Person occurs on."@en ;
+                                                                                               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                                                                                               rdfs:label "Age Measurment"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/AutomobileModel
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/AutomobileModel> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf cco:ArtifactDesignContentEntity ;
+                                                                                                cco:definition "An Artifact Design that prescribes the general features, platform, available options, and desired functionality of one or more generations or years of a range of motor vehicles prodiced by a specific manufacturer."@en ;
+                                                                                                cco:example_of_usage "BMW 3 Series"@en ,
+                                                                                                                     "Toyota Camry"@en ;
+                                                                                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                                                                                                rdfs:label "Automobile Model"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/AutomobileTrimLevel
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/AutomobileTrimLevel> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf cco:ArtifactDesignContentEntity ;
+                                                                                                    cco:definition "An Artifact Design that prescribes the general features, platform, available options, and desired functionality of one or more generations or years of a range of motor vehicles prodiced by a specific manufacturer."@en ;
+                                                                                                    cco:example_of_usage "Toyota Camry LE"@en ;
+                                                                                                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                                                                                                    rdfs:label "Automobile Trim Level"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/Birthdate
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/Birthdate> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf cco:DateIdentifier ;
+                                                                                          cco:definition "A Designative Information Content Entity that desiganted the Day a Birth occurs on."@en ;
+                                                                                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                                                                                          rdfs:label "Birthdate"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/SocialSecurityNumber
+<http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension/SocialSecurityNumber> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf cco:CodeIdentifier ;
+                                                                                                     cco:definition "A Designative Information Content Entity that desigantes a person within the contex otf the United States Social Security Administration."@en ;
+                                                                                                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Domain/MyDataExtension"^^xsd:anyURI ;
+                                                                                                     rdfs:label "Social Security Number"@en .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
