@@ -35,4 +35,8 @@ https://github.com/I-AM-project/tasks-for-volunteers/tree/main/My-Data-Ontology
 
 4. Complete the process until all the attributes have a corresponding representation. 
    
-For reference, view the mydata.org [mapping](https://github.com/I-AM-project/my-data-ontology/blob/master/dev/mapping-mydata_org-mdo.csv) 
+For reference, view the mydata.org [mapping](https://github.com/I-AM-project/my-data-ontology/blob/master/dev/mapping-mydata_org-mdo.csv)
+
+
+##
+### For more information on the Common Core Ontologies and mapping data using CCO, see [here](https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/documentation/An%20Overview%20of%20the%20Common%20Core%20Ontologies%201.3.docx) and [here](https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/documentation/Modeling%20Information%20with%20the%20Common%20Core%20Ontologies%201.3.docx)
